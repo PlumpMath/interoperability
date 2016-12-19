@@ -1,0 +1,18 @@
+RewriteEngine On
+# RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^testServiceStatus/(.*)$ wrapper.php?operation=testServiceStatus&id=$1 [L]
+
+RewriteCond %{QUERY_STRING} ^id=(.*)$
+RewriteRule ^testServiceStatus$ wrapper.php?operation=testServiceStatus&id=%1 [L]
+
+RewriteCond %{QUERY_STRING} ^id=(.*)$
+RewriteRule ^queryIDnoCD$ wrapper.php?operation=queryIDnoCD&identity=%1 [L]
+
+RewriteCond %{QUERY_STRING} ^id=([^&]*)&username=([^&]*)&password=(.*)$
+RewriteRule ^queryID$ wrapper.php?operation=queryID&identity=%1&username=%2&password=%3 [L]
+
+RewriteRule ^echo/(.*)$ wrapper.php?operation=echo&$1 [QSA,L]
