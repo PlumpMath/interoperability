@@ -61,7 +61,7 @@ public class Academicservice {
      
 		 id = id.trim();
 		 String JSONresponse="";
-		 WebServiceClient edetConnect=new WebServiceClient("kasvestas","boldtrick666","https://academicidapp.grnet.gr/admin/web/ws/users/inspectAcademicID");
+		 WebServiceClient edetConnect=new WebServiceClient("","","https://academicidapp.grnet.gr/admin/web/ws/users/inspectAcademicID");
 		 JSONresponse=WebServiceClient.clientConnectGetJson(edetConnect.getWebAPPURLName(),"wso2.minedu.gov.gr",id,edetConnect.getUsername(),edetConnect.getPassword());
      
 		 if (!JSONresponse.equals("")) {
