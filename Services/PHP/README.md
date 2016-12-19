@@ -1,4 +1,4 @@
-# Δείγμα Web Sercice Client 
+# Δείγμα Web Service Client 
 
 Υλοποιήθηκε ένας [δοκιμαστικός Web Service Client σε PHP application server](wrapper.php) για την κατανάλωση του Service Ελέγχου Ακαδημαικής Ταυτότητας του ΕΔΕΤ μέσω php curl. Οι λειτουργίες του είναι:
 
