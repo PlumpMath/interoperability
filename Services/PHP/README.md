@@ -2,15 +2,15 @@
 
 Υλοποιήθηκε ένας [δοκιμαστικός Web Service Client σε PHP application server](wrapper.php) για την κατανάλωση του Service Ελέγχου Ακαδημαικής Ταυτότητας του ΕΔΕΤ μέσω php curl. Οι λειτουργίες του είναι:
 
-* queryID, που επιστρέφει την απάντηση του επίσημου web service, με παραμέτρους:
-* * username προεραιτικό, το username για το web service
-* * password προεραιτικό, το password για το web service
-* * identity υποχρεωτικό, το academic id για έλεγχο
-* queryIDis που επιστρέφει κείμενο isStudent:[true,false] όπως προκύπτει από το επίσημο web service, με παραμέτρους:
-* * username προεραιτικό, το username για το web service
-* * password προεραιτικό, το password για το web service
-* * identity υποχρεωτικό, το academic id για έλεγχο
-* * echo, που επιστρέφει το query_string, με οποιαδήποτε παράμετρο
+* queryID, που επιστρέφει *την απάντηση του επίσημου web service*, με παραμέτρους:
+    * username προεραιτικό, το username για το web service
+    * password προεραιτικό, το password για το web service
+    * identity υποχρεωτικό, το academic id για έλεγχο
+* queryIDis που επιστρέφει *κείμενο isStudent:[true,false]* όπως προκύπτει από το επίσημο web service, με παραμέτρους:
+    * username προεραιτικό, το username για το web service
+    * password προεραιτικό, το password για το web service
+    * identity υποχρεωτικό, το academic id για έλεγχο
+* echo, που επιστρέφει το query_string, με οποιαδήποτε παράμετρο
 
 Οι λειτουργίες δίνονται επίσης ως παράμετρος κατά την κλήση. Για παράδειγμα:
 
@@ -24,6 +24,6 @@ http://local.dev/academic-id/wrapper.php?operation=echo&identity=123456789012
 
 Οι λειτουργίες είναι: 
 
-* testServiceStatus,
-* queryIDnoCD,
+* testServiceStatus
+* queryIDnoCD
 * queryID
