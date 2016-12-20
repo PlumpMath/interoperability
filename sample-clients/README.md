@@ -40,3 +40,11 @@
     -   **id** (κείμενο)
 -   δέχεται δεδομένα στο query string
 -   καλείται με μέθοδο κλήσης **GET**
+
+**Δείγματα** 
+
+| Γλώσσα | Αρχείο |
+| ------ | ------ |
+| Command line curl | [verify_get.sh](sh/verify_get.sh) |
+| PHP | [verify_get.php](php/verify_get.php) |
+
