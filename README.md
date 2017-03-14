@@ -1,4 +1,4 @@
-# Πλατφόρμα WSO2 Enterprise Service Bus για την υλοποίηση των Web Services του ΥΠΠΕΘ 
+# Πλατφόρμα διαλειτουργικότητας του ΥΠΠΕΘ 
 
 # Περιγραφή #
 <p align="justify">
